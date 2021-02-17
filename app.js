@@ -9,4 +9,7 @@ const isAnagram = (s, t) => s.split('').sort().join('') === t.split('').sort().j
 
 
 //Move Zeroes
+function moveZeroes(nums) {
+    nums.sort((a,b) => a != 0 && b != 0 ? 0 : (a == 0 ? 1 : -1));
+}
 
